@@ -25,12 +25,12 @@ import { userRouter } from "./routes/User.js";
 app.use("/api/v1", userRouter);
 
 
-const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "./PortfolioFrontend/build")));
+// const __dirname = path.resolve();
+// app.use(express.static(path.join(__dirname, "./PortfolioFrontend/build")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./PortfolioFrontend/build/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "./PortfolioFrontend/build/index.html"));
+// });
 
-// Start your server in your main file
+// // Start your server in your main file
 export default app;
